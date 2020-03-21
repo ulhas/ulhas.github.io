@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{"1GPU":function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),l=t.n(a),c=t("B7F5"),o=t("z2p8");n.default=function(){return l.a.createElement(c.a,null,l.a.createElement(o.a,{title:"Blog"}),l.a.createElement("h1",null,"Blog"))}}}]);
-//# sourceMappingURL=component---src-pages-blog-tsx-e4390393020393cf01c6.js.map
