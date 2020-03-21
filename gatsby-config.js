@@ -1,16 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `Ulhas M`,
+    title: `Ulhas`,
     description: `Ulhas' personal website`,
     author: `@ulhas_sm`,
     siteUrl: `https://ulhas.github.io/`,
     menuLinks: [
       {
-        name: "Blog",
+        name: "blog",
         link: "/blog",
       },
       {
-        name: "About",
+        name: "about",
         link: "/about",
       },
     ],

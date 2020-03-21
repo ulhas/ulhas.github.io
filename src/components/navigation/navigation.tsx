@@ -14,13 +14,15 @@ export interface NavigationProps {
 const NavigationItem = ({ name, link }: NavigationItemProps) => {
   return (
     <Nav.Item>
-      <Link
-        to={link}
-        className="nav-link"
-        activeClassName="nav-link active text-primary"
-      >
-        {name}
-      </Link>
+      <h4>
+        <Link
+          to={link}
+          className="nav-link"
+          activeClassName="nav-link active text-primary"
+        >
+          {name}
+        </Link>
+      </h4>
     </Nav.Item>
   )
 }

@@ -4,35 +4,28 @@ import { Container, Navbar } from "react-bootstrap"
 
 import Navigation, { NavigationProps } from "../navigation/navigation"
 
-interface NavigationBrandProps {
-  siteTitle: string
-}
-
-const NavigationBrand = ({ siteTitle }: NavigationBrandProps) => {
+const NavigationBrand = () => {
   return (
     <Navbar.Brand>
-      <small>
-        <Link to="/" className="text-dark box-shadow">
-          {siteTitle}
+      <h2>
+        <Link to="/" className="text-white bg-dark nav-link">
+          {"um"}
         </Link>
-      </small>
+      </h2>
     </Navbar.Brand>
   )
 }
 
-const NavigationBar = ({
-  siteTitle,
-  menuLinks,
-}: NavigationBrandProps & NavigationProps) => {
+const NavigationBar = ({ menuLinks }: NavigationProps) => {
   return (
     <Navbar>
-      <NavigationBrand siteTitle={siteTitle} />
+      <NavigationBrand />
       <Navigation menuLinks={menuLinks} />
     </Navbar>
   )
 }
 
-const Header = (props: NavigationBrandProps & NavigationProps) => (
+const Header = (props: NavigationProps) => (
   <Container>
     <NavigationBar {...props} />
   </Container>

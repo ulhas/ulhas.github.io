@@ -11,7 +11,6 @@ import { library } from "@fortawesome/fontawesome-svg-core"
 import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons"
 
 import Header from "../header/header"
-import Footer from "../footer/footer"
 
 library.add(faChevronCircleRight)
 
@@ -36,12 +35,8 @@ const Layout = ({ children }: LayoutProps) => {
 
   return (
     <>
-      <Header
-        siteTitle={data.site.siteMetadata.title}
-        menuLinks={data.site.siteMetadata.menuLinks}
-      />
+      <Header menuLinks={data.site.siteMetadata.menuLinks} />
       <main>{children}</main>
-      <Footer />
     </>
   )
 }
