@@ -11,7 +11,7 @@ const SubHeading = () => (
   </>
 )
 
-const HeroImage = () => <p className="display-3 text-center">🧑🏻‍💻</p>
+const HeroImage = () => <p className="display-3 text-md-center">🧑🏻‍💻</p>
 
 const HeroSection = () => {
   return (
