@@ -1,11 +1,15 @@
 import React from "react"
 import { Container } from "react-bootstrap"
 
-const Heading = () => <h1>what i've to say</h1>
+import { IntrinsicProps } from "../shared/shared"
+
+const Heading = ({ className }: IntrinsicProps) => (
+  <h2 className={className}>what i've to say</h2>
+)
 
 const Blog = () => (
   <Container>
-    <Heading />
+    <Heading className="my-5" />
   </Container>
 )
 
