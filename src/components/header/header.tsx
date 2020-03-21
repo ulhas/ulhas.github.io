@@ -7,11 +7,9 @@ import Navigation, { NavigationProps } from "../navigation/navigation"
 const NavigationBrand = () => {
   return (
     <Navbar.Brand>
-      <h2>
-        <Link to="/" className="text-white bg-dark nav-link">
-          {"um"}
-        </Link>
-      </h2>
+      <Link to="/" className="text-white bg-dark nav-link h2 font-weight-bold">
+        {"um"}
+      </Link>
     </Navbar.Brand>
   )
 }
