@@ -1,8 +1,27 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Ulhas M`,
+    description: `Ulhas' personal website`,
+    author: `@ulhas_sm`,
+    siteUrl: `https://ulhas.github.io/`,
+    menuLinks: [
+      {
+        name: "Work",
+        link: "/work",
+      },
+      {
+        name: "Blog",
+        link: "/blog",
+      },
+      {
+        name: "About",
+        link: "/about",
+      },
+      {
+        name: "Contact",
+        link: "/contact",
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -25,6 +44,15 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    `gatsby-plugin-typescript`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
