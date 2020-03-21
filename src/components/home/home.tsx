@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Jumbotron } from "react-bootstrap"
+import { Col, Container, Jumbotron, Row } from "react-bootstrap"
 
 import styles from "./home.module.scss"
 
@@ -11,13 +11,22 @@ const SubHeading = () => (
   </>
 )
 
+const HeroImage = () => <p className="display-3 text-center">🧑🏻‍💻</p>
+
 const HeroSection = () => {
   return (
     <div className={`${styles.hero} d-flex align-items-center`}>
       <Container>
         <Jumbotron className="bg-transparent">
-          <Heading />
-          <SubHeading />
+          <Row>
+            <Col md={{ span: 6, order: 6 }}>
+              <HeroImage />
+            </Col>
+            <Col md={{ span: 6, order: 1 }}>
+              <Heading />
+              <SubHeading />
+            </Col>
+          </Row>
         </Jumbotron>
       </Container>
     </div>
