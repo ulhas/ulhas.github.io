@@ -6,20 +6,12 @@ module.exports = {
     siteUrl: `https://ulhas.github.io/`,
     menuLinks: [
       {
-        name: "Work",
-        link: "/work",
-      },
-      {
         name: "Blog",
         link: "/blog",
       },
       {
         name: "About",
         link: "/about",
-      },
-      {
-        name: "Contact",
-        link: "/contact",
       },
     ],
   },
