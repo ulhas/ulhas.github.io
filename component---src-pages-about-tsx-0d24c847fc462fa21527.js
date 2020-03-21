@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{"2l/u":function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),l=t.n(a),u=t("B7F5"),r=t("z2p8"),c=t("7vrA"),o=function(){return l.a.createElement("h1",null,"hi, nice to meet you")},i=function(){return l.a.createElement(c.a,null,l.a.createElement(o,null))};n.default=function(){return l.a.createElement(u.a,null,l.a.createElement(r.a,{title:"About"}),l.a.createElement(i,null))}}}]);
-//# sourceMappingURL=component---src-pages-about-tsx-0d24c847fc462fa21527.js.map
