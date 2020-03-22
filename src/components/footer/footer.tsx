@@ -60,13 +60,20 @@ const GitHub = (props: IntrinsicProps) => (
 )
 
 const FooterNote = () => (
-  <h5 className="pt-2">
+  <h6 className="pt-2 text-secondary">
+    {`{ `}
     built with
     {` `}
-    <a href="https://www.gatsbyjs.org" target="_blank" className="text-primary">
+    <a
+      href="https://www.gatsbyjs.org"
+      target="_blank"
+      className="text-info"
+      aria-label="Built with Gatsby"
+    >
       gatsby
     </a>
-  </h5>
+    {` }`}
+  </h6>
 )
 
 const Footer = () => (
