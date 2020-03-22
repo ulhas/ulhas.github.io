@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap"
 import { IntrinsicProps } from "../shared/shared"
 
 const Heading = ({ className }: IntrinsicProps) => (
-  <h2 className={className}>hi, nice to meet you</h2>
+  <h1 className={className}>hi, nice to meet you</h1>
 )
 
 const Me = () => (

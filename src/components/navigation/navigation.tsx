@@ -13,7 +13,7 @@ export interface NavigationProps {
 
 const NavigationItem = ({ name, link }: NavigationItemProps) => (
   <Nav.Item>
-    <h4>
+    <h3>
       <Link
         to={link}
         className="nav-link"
@@ -21,7 +21,7 @@ const NavigationItem = ({ name, link }: NavigationItemProps) => (
       >
         {name}
       </Link>
-    </h4>
+    </h3>
   </Nav.Item>
 )
 
