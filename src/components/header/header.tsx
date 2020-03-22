@@ -4,6 +4,14 @@ import { Container, Navbar } from "react-bootstrap"
 
 import Navigation, { NavigationProps } from "../navigation/navigation"
 
+const Header = (props: NavigationProps) => (
+  <header>
+    <Container>
+      <NavigationBar {...props} />
+    </Container>
+  </header>
+)
+
 const NavigationBrand = () => (
   <Navbar.Brand>
     <h2>
@@ -19,14 +27,6 @@ const NavigationBar = ({ menuLinks }: NavigationProps) => (
     <NavigationBrand />
     <Navigation menuLinks={menuLinks} />
   </Navbar>
-)
-
-const Header = (props: NavigationProps) => (
-  <header>
-    <Container>
-      <NavigationBar {...props} />
-    </Container>
-  </header>
 )
 
 Header.defaultProps = {

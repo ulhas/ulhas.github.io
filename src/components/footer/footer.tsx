@@ -10,6 +10,24 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core"
 
 import { IntrinsicProps } from "../shared/shared"
 
+const Footer = () => (
+  <footer>
+    <Container>
+      <Row>
+        <Col xs={6}>
+          <FooterNote />
+        </Col>
+        <Col xs={6}>
+          <div className="float-right">
+            <Twitter className="mr-2" />
+            <LinkedIn className="mr-2" />
+            <GitHub />
+          </div>
+        </Col>
+      </Row>
+    </Container>
+  </footer>
+)
 interface SocialMediaProps {
   icon: IconProp
   href: string
@@ -30,6 +48,23 @@ const SocialMediaButton = ({
   >
     <FontAwesomeIcon icon={icon} size={"2x"} />
   </a>
+)
+
+const FooterNote = () => (
+  <h6 className="pt-2 text-secondary">
+    {`{ `}
+    🚀 with
+    {` `}
+    <a
+      href="https://www.gatsbyjs.org"
+      target="_blank"
+      className="text-info"
+      aria-label="Built with Gatsby"
+    >
+      gatsby
+    </a>
+    {` }`}
+  </h6>
 )
 
 const Twitter = (props: IntrinsicProps) => (
@@ -57,42 +92,6 @@ const GitHub = (props: IntrinsicProps) => (
     ariaLabel="Ulhas's Github"
     {...props}
   />
-)
-
-const FooterNote = () => (
-  <h6 className="pt-2 text-secondary">
-    {`{ `}
-    🚀 with
-    {` `}
-    <a
-      href="https://www.gatsbyjs.org"
-      target="_blank"
-      className="text-info"
-      aria-label="Built with Gatsby"
-    >
-      gatsby
-    </a>
-    {` }`}
-  </h6>
-)
-
-const Footer = () => (
-  <footer>
-    <Container>
-      <Row>
-        <Col xs={6}>
-          <FooterNote />
-        </Col>
-        <Col xs={6}>
-          <div className="float-right">
-            <Twitter className="mr-2" />
-            <LinkedIn className="mr-2" />
-            <GitHub />
-          </div>
-        </Col>
-      </Row>
-    </Container>
-  </footer>
 )
 
 export default Footer

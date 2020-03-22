@@ -11,6 +11,14 @@ export interface NavigationProps {
   menuLinks: [NavigationItemProps]
 }
 
+const Navigation = ({ menuLinks }: NavigationProps) => (
+  <Nav className="ml-auto">
+    {menuLinks.map(link => {
+      return <NavigationItem key={link.name} {...link} />
+    })}
+  </Nav>
+)
+
 const NavigationItem = ({ name, link }: NavigationItemProps) => (
   <Nav.Item>
     <h3>
@@ -23,14 +31,6 @@ const NavigationItem = ({ name, link }: NavigationItemProps) => (
       </Link>
     </h3>
   </Nav.Item>
-)
-
-const Navigation = ({ menuLinks }: NavigationProps) => (
-  <Nav className="ml-auto">
-    {menuLinks.map(link => {
-      return <NavigationItem key={link.name} {...link} />
-    })}
-  </Nav>
 )
 
 export default Navigation

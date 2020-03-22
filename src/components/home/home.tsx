@@ -3,11 +3,17 @@ import { Col, Container, Jumbotron, Row } from "react-bootstrap"
 
 import styles from "./home.module.scss"
 
-const Heading = () => <h1>ulhas</h1>
+const Home = () => <HeroSection />
 
-const SubHeading = () => <h4>code | tech | random</h4>
-
-const HeroImage = () => <p className="display-3 text-md-center">🧑🏻‍💻🐶</p>
+const HeroSection = () => (
+  <div className={`${styles.hero} d-flex align-items-center`}>
+    <Container>
+      <Jumbotron className="bg-transparent">
+        <Hero />
+      </Jumbotron>
+    </Container>
+  </div>
+)
 
 const Hero = () => (
   <Row>
@@ -21,16 +27,10 @@ const Hero = () => (
   </Row>
 )
 
-const HeroSection = () => (
-  <div className={`${styles.hero} d-flex align-items-center`}>
-    <Container>
-      <Jumbotron className="bg-transparent">
-        <Hero />
-      </Jumbotron>
-    </Container>
-  </div>
-)
+const HeroImage = () => <p className="display-3 text-md-center">🧑🏻‍💻</p>
 
-const Home = () => <HeroSection />
+const Heading = () => <h1>ulhas</h1>
+
+const SubHeading = () => <h4>code | tech | random</h4>
 
 export default Home

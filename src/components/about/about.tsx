@@ -3,6 +3,13 @@ import { Container } from "react-bootstrap"
 
 import { IntrinsicProps } from "../shared/shared"
 
+const About = () => (
+  <Container className="mb-5">
+    <Heading className="my-5" />
+    <Me />
+  </Container>
+)
+
 const Heading = ({ className }: IntrinsicProps) => (
   <h1 className={className}>hi, nice to meet you</h1>
 )
@@ -39,13 +46,6 @@ const Me = () => (
       placerat eu.
     </p>
   </>
-)
-
-const About = () => (
-  <Container className="mb-5">
-    <Heading className="my-5" />
-    <Me />
-  </Container>
 )
 
 export default About
