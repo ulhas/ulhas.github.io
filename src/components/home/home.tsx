@@ -10,6 +10,7 @@ const HeroSection = () => (
     <Container>
       <Jumbotron className="bg-transparent">
         <Hero />
+        <Work />
       </Jumbotron>
     </Container>
   </div>
@@ -32,5 +33,52 @@ const HeroImage = () => <p className="display-3 text-md-center">🧑🏻‍💻<
 const Heading = () => <h1>ulhas</h1>
 
 const SubHeading = () => <h4>code | tech | random</h4>
+
+const Work = () => (
+  <>
+    <Current />
+    <Previous />
+  </>
+)
+
+const Current = () => (
+  <p className="font-weight-bold text-secondary mb-0">
+    Currently -{" "}
+    <span>
+      <a
+        href="https://www.procedure.tech"
+        target="_blank"
+        className="text-info text-decoration-none"
+      >
+        Procedure
+      </a>
+    </span>
+  </p>
+)
+
+const Previous = () => (
+  <p className="font-weight-bold text-secondary">
+    Previously -{" "}
+    <span>
+      <a
+        href="https://www.hypertrack.com"
+        target="_blank"
+        className="text-info text-decoration-none"
+      >
+        HyperTrack
+      </a>
+    </span>
+    {", "}
+    <span>
+      <a
+        href="https://www.opentable.com"
+        target="_blank"
+        className="text-info text-decoration-none"
+      >
+        OpenTable
+      </a>
+    </span>
+  </p>
+)
 
 export default Home

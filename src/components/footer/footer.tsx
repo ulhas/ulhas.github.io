@@ -58,7 +58,7 @@ const FooterNote = () => (
     <a
       href="https://www.gatsbyjs.org"
       target="_blank"
-      className="text-info"
+      className="text-info text-decoration-none"
       aria-label="Built with Gatsby"
     >
       gatsby
