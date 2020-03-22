@@ -42,7 +42,7 @@ const Me = () => (
 )
 
 const About = () => (
-  <Container>
+  <Container className="mb-5">
     <Heading className="my-5" />
     <Me />
   </Container>

@@ -5,7 +5,7 @@ import styles from "./home.module.scss"
 
 const Heading = () => <h1>ulhas</h1>
 
-const SubHeading = () => <h4>code | tech | startups</h4>
+const SubHeading = () => <h4>code | tech | random</h4>
 
 const HeroImage = () => <p className="display-3 text-md-center">🧑🏻‍💻</p>
 

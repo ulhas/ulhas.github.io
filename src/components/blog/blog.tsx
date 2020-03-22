@@ -8,7 +8,7 @@ const Heading = ({ className }: IntrinsicProps) => (
 )
 
 const Blog = () => (
-  <Container>
+  <Container className="mb-5">
     <Heading className="my-5" />
   </Container>
 )
