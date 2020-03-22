@@ -59,14 +59,31 @@ const GitHub = (props: IntrinsicProps) => (
   />
 )
 
+const FooterNote = () => (
+  <h5 className="pt-2">
+    built with
+    {` `}
+    <a href="https://www.gatsbyjs.org" target="_blank" className="text-primary">
+      gatsby
+    </a>
+  </h5>
+)
+
 const Footer = () => (
   <footer>
     <Container>
-      <div className="float-right">
-        <Twitter className="mr-2" />
-        <LinkedIn className="mr-2" />
-        <GitHub />
-      </div>
+      <Row>
+        <Col xs={6}>
+          <FooterNote />
+        </Col>
+        <Col xs={6}>
+          <div className="float-right">
+            <Twitter className="mr-2" />
+            <LinkedIn className="mr-2" />
+            <GitHub />
+          </div>
+        </Col>
+      </Row>
     </Container>
   </footer>
 )
