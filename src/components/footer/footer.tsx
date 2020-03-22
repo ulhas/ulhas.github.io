@@ -54,13 +54,15 @@ const GitHub = (props: IntrinsicProps) => (
 )
 
 const Footer = () => (
-  <Container>
-    <div className="float-right">
-      <Twitter className="mr-2" />
-      <LinkedIn className="mr-2" />
-      <GitHub />
-    </div>
-  </Container>
+  <footer>
+    <Container>
+      <div className="float-right">
+        <Twitter className="mr-2" />
+        <LinkedIn className="mr-2" />
+        <GitHub />
+      </div>
+    </Container>
+  </footer>
 )
 
 export default Footer
