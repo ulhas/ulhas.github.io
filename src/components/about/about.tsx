@@ -1,3 +1,4 @@
+// @format
 import React from "react"
 import { Container } from "react-bootstrap"
 
@@ -17,33 +18,16 @@ const Heading = ({ className }: IntrinsicProps) => (
 const Me = () => (
   <>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum,
-      enim eget accumsan ultrices, lacus est vehicula risus, sed placerat urna
-      dolor vel velit. Donec suscipit magna elit, eu luctus mauris pulvinar nec.
-      Maecenas eu rhoncus arcu, vel pellentesque velit. Nam tincidunt et est
-      iaculis venenatis.
+    I'm have strong opinions about a lot of things, mostly in tech, and that's what I want to talk about here.
     </p>
+
     <p>
-      Aenean fermentum ultrices ante, sit amet elementum enim mattis ac. Aliquam
-      eu est iaculis, aliquet neque at, suscipit velit. Donec ac tempus ex, in
-      porta sem. Ut vitae ante sit amet nulla pellentesque vestibulum id vel
-      odio. Phasellus et ante facilisis, lobortis ante vel, pretium felis. Morbi
-      finibus mauris eu pharetra venenatis.
+    Expect me to write about code, designs, system archictecture, rants about JS, startups, coffee and anything that interests me.
     </p>
+
     <p>
-      Aliquam sem sem, lacinia id lacus et, fringilla fermentum sem. Suspendisse
-      potenti. Suspendisse non lobortis ipsum. Ut commodo leo eget rhoncus
-      mollis. Nullam blandit laoreet nisi iaculis molestie. Quisque ipsum quam,
-      ultrices non tellus nec, vestibulum placerat lorem. Duis malesuada eget
-      purus sed porttitor.
-    </p>
-    <p>
-      Suspendisse imperdiet velit sapien, vitae mattis magna tempor non.
-      Pellentesque fringilla purus nulla. Proin tincidunt leo sit amet mauris
-      aliquet, tempor porttitor mauris elementum. Maecenas pellentesque
-      consequat tempus. Suspendisse id nulla egestas, gravida velit sed,
-      placerat velit. Maecenas aliquet viverra dolor, sodales tincidunt mauris
-      placerat eu.
+    This is written in <a href="https://www.gatsby.com/">Gatsby</a>, hosted on Github pages and deployed through Travis CI.
+    You can find the codebase <a href="http://www.github.com/ulhas/ulhas.github.io/">here</a>.
     </p>
   </>
 )
